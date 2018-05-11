@@ -239,6 +239,7 @@ public class WordGameFrame extends javax.swing.JFrame {
 
     private void removeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeButtonActionPerformed
         // Remove the last element from the end of each of the Arrays.
+        // Using methods to remove the word.
         removeName();
         removeNoun();
         removeVerb();
@@ -261,26 +262,51 @@ public class WordGameFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_verbInputActionPerformed
 
     
+    /**
+     * This method is uses to remove the last noun in the list
+     * pre: are is
+     * post is
+     */
     private void removeNoun()
     {
         nouns.remove(nouns.size()-1);
     }
     
+    /**
+     * This method is uses to remove the last verb in the list
+     * pre: running racing
+     * post running
+     */
     private void removeVerb()
     {
         verbs.remove(verbs.size()-1);
     }
     
+    /**
+     * This method is uses to remove the last adverb in the list
+     * pre: quickly happily
+     * post: quickly
+     */
     private void removeAdverb()
     {
         adverbs.remove(adverbs.size()-1);
     }
     
+    /**
+     * This method is uses to remove the last adjectives in the list
+     * pre: beautiful hot
+     * post beautiful
+     */
     private void removeAdjective()
     {
         adjectives.remove(adjectives.size()-1);
     }
     
+    /**
+     * This method is uses to remove the last name in the list
+     * pre: Henry HaHA
+     * Post: Henry
+     */
     private void removeName()
     {
          names.remove(names.size()-1);
