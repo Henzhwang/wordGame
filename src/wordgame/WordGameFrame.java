@@ -239,25 +239,54 @@ public class WordGameFrame extends javax.swing.JFrame {
 
     private void removeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeButtonActionPerformed
         // Remove the last element from the end of each of the Arrays.
-        names.remove(names.size()-1);
-        verbs.remove(verbs.size()-1);
-        adverbs.remove(adverbs.size()-1);
-        nouns.remove(nouns.size()-1);
-        adjectives.remove(adjectives.size()-1);
+        removeName();
+        removeNoun();
+        removeVerb();
+        removeAdverb();
+        removeAdjective();
+       
+        
 
         // These trace statements have been added to testing purposes.
-        System.out.println("Names: " + names);
-        System.out.println("Verbs: " + verbs);
-        System.out.println("Adverbs: " + adverbs);
-        System.out.println("Nouns: " + nouns);
-        System.out.println("Adjectives: " + adjectives);
-        System.out.println("\n");
+//        System.out.println("Names: " + names);
+//        System.out.println("Verbs: " + verbs);
+//        System.out.println("Adverbs: " + adverbs);
+//        System.out.println("Nouns: " + nouns);
+//        System.out.println("Adjectives: " + adjectives);
+//        System.out.println("\n");
     }//GEN-LAST:event_removeButtonActionPerformed
 
     private void verbInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verbInputActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_verbInputActionPerformed
 
+    
+    private void removeNoun()
+    {
+        nouns.remove(nouns.size()-1);
+    }
+    
+    private void removeVerb()
+    {
+        verbs.remove(verbs.size()-1);
+    }
+    
+    private void removeAdverb()
+    {
+        adverbs.remove(adverbs.size()-1);
+    }
+    
+    private void removeAdjective()
+    {
+        adjectives.remove(adjectives.size()-1);
+    }
+    
+    private void removeName()
+    {
+         names.remove(names.size()-1);
+    }
+    
+    
     /**
      * @param args the command line arguments
      */
